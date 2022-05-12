@@ -14,10 +14,9 @@ document.getElementById("player_answer").innerHTML = "Answer Turn : " + player2_
 function send(){
     get_word = document.getElementById("word").value;
     word = get_word.toLowerCase();
-    var str = word;
     console.log("Word in lowercase : " + word);
 
-    chartAt1 = str.chartAt(1);
+    chartAt1 = word.chartAt(1);
     console.log(chartAt1);
 
     length_divide2 = Math.floor(word.length/2);
